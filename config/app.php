@@ -166,6 +166,7 @@ return [
         /*
          * Package Service Providers...
          */
+        \Acacha\Stateful\Providers\StatefulServiceProvider::class,
 
         //
 

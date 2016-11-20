@@ -15,6 +15,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/transaction', function () {
-    return view('transaction');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/transaction', function () {
+        $transaction = new \App\Transaction();
+        $faker = Faker\Factory::create();
+        $transaction->name = $faker->word;
+        $transaction->save();
+        
+        $transaction->process();
+        $transaction->activate();
+        $transaction->fail();
+        $transaction->close();
+
+
+
+        $data = [
+            "transaction" => $transaction
+        ];
+        return view('transaction',$data);
+    });
 });
+

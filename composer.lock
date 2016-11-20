@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "589755bacc0140317b455d33d1e4eb10",
-    "content-hash": "adc8e08a0c47d9c8f32adceef0db28e5",
+    "hash": "df52bbcb21ba5ed43adff46bae4bc678",
+    "content-hash": "c63310cdc8e5de851cf1206a3bcdb1cb",
     "packages": [
         {
             "name": "acacha/admin-lte-template-laravel",
@@ -61,6 +61,54 @@
                 "theme"
             ],
             "time": "2016-11-20 16:49:57"
+        },
+        {
+            "name": "acacha/stateful-eloquent",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "/home/sergi1/Code/acacha/stateful-eloquent",
+                "reference": "44b0737ad426e89c9042a00059c170f5c33a89a4",
+                "shasum": null
+            },
+            "require": {
+                "laravel/framework": "5.3.*",
+                "php": ">=5.6.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Acacha\\Stateful\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "MikeRice\\Stateful\\Tests\\": "tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Rice",
+                    "email": "mike.hj.rice@gmail.com"
+                },
+                {
+                    "name": "Sergi Tur Badenas",
+                    "email": "sergiturbadenas@gmail.com"
+                }
+            ],
+            "description": "State machines for Eloquent classes",
+            "homepage": "https://github.com/mikerice/stateful-eloquent",
+            "keywords": [
+                "eloquent",
+                "laravel",
+                "statemachine"
+            ]
         },
         {
             "name": "acacha/user",
@@ -3882,7 +3930,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "acacha/admin-lte-template-laravel": 20
+        "acacha/admin-lte-template-laravel": 20,
+        "acacha/stateful-eloquent": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

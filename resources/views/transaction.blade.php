@@ -15,7 +15,7 @@
                     <div class="panel-body">
                         dadasdasda
 
-
+                        {{ $transaction }}
 
 
 

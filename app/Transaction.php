@@ -2,11 +2,15 @@
 
 namespace App;
 
+use Acacha\Stateful\Contracts\Stateful;
+use Acacha\Stateful\Traits\StatefulTrait;
 use Illuminate\Database\Eloquent\Model;
 
 class Transaction extends Model implements Stateful
 {
     use StatefulTrait;
+
+    protected $fillable = ['name','state'];
 
     /**
      * Transaction States

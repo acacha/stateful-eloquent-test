@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use Acacha\Stateful\Exceptions\IllegalStateTransitionException;
 use Exception;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
@@ -44,6 +45,10 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        if ($exception instanceof IllegalStateTransitionException) {
+            return response()->view('illegalStateException',compact('exception'));
+        }
+
         return parent::render($request, $exception);
     }
 
