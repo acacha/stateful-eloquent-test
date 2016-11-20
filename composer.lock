@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acacha/adminlte-laravel.git",
-                "reference": "6f83658251fcff10adf25390406b64dc3810d207"
+                "reference": "5411bf4accca5b15ad5f4f2288e524e97d6f25c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acacha/adminlte-laravel/zipball/6f83658251fcff10adf25390406b64dc3810d207",
-                "reference": "6f83658251fcff10adf25390406b64dc3810d207",
+                "url": "https://api.github.com/repos/acacha/adminlte-laravel/zipball/5411bf4accca5b15ad5f4f2288e524e97d6f25c8",
+                "reference": "5411bf4accca5b15ad5f4f2288e524e97d6f25c8",
                 "shasum": ""
             },
             "require": {
@@ -60,7 +60,7 @@
                 "template",
                 "theme"
             ],
-            "time": "2016-11-08 18:06:29"
+            "time": "2016-11-20 16:49:57"
         },
         {
             "name": "acacha/user",
