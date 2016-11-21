@@ -23,9 +23,12 @@ Route::group(['middleware' => 'auth'], function () {
         $transaction->save();
         
         $transaction->process();
-        $transaction->activate();
+        //$transaction->activate();
         $transaction->fail();
+        $transaction->process();
+        $transaction->activate();
         $transaction->close();
+        //$transaction->close();
 
 
 
